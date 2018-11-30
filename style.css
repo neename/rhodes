@@ -2,6 +2,12 @@
   box-sizing: border-box;
   }
 
+  .cf:after{
+    content: "";
+    display:block;
+    clear: both;
+  }
+
   html{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
@@ -64,8 +70,14 @@
   }
 
   .card img{
-    width: 400px;
-    height: 200px;
+    width: 33.333333333%;
+    height: auto;
+    float: left;
+  }
+
+  .card p{
+    float: left;
+    width: 66.666666667%;
   }
   #footer{
     display: flex;
