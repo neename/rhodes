@@ -1,5 +1,11 @@
 *{
 box-sizing: border-box;
+padding:0;
+margin:0;
+}
+
+body{
+  background-color: #fff;
 }
 
 .cf:after{
@@ -14,30 +20,33 @@ html{
   color: #000;
 }
 
-a{
-  text-decoration: none;
-  color: #000;
+#wrapper{
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(209, 245, 252,1);
+  margin: 0 auto 0 auto;
 }
 
 #header {
-  height: 60px;
-  background: #ffffff;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: space-between;
+  height: 150px;
+  background:transparent url(img/bg_water.jpg) no-repeat -400px -650px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+#menu li a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
 }
 
 #logo{
-  position: absolute;
+  position: relative;
 }
 
-#navigation ul{
+#nav ul{
 margin: 0;
 }
 
@@ -46,7 +55,7 @@ margin: 0;
   text-decoration: none;
   display: inline-block;
   padding: 1rem;
-  text-align: center;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   vertical-align: middle;
@@ -56,73 +65,96 @@ margin: 0;
   float: right;
 }
 
-body{
-  margin: 0;
+#mainsection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* .container{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-} */
 
-h1, h2 {
+#mainsection a{
+  text-decoration: none;
+  color: #000;
+}
+
+#wrapper > h1 > h2{
   text-align: center;
 }
 
-#headline{
+#intro{
   display: inline-block;
-  margin: 2rem;
   text-align: center;
-  height: 50%;
+  padding: 20px 20px 20px 20px;
 }
+
 
 .fliesstext{
-font-size: 14px;
-text-align: left;
+  font-size: 14px;
+  text-align: left;
 }
 
 .card{
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 6px;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
-  width: 800px;
   text-align: center;
   padding: 1rem;
   margin: 1em;
+  height: auto;
 }
 
 .card img{
   width: 33.333333333%;
   height: auto;
   float: left;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .card p{
   float: left;
   width: 66.666666667%;
-}
+  }
 
 section.div{
   text-align: center;
 }
 
-#social-nav li{
-  list-style: none;
-  text-decoration: none;
-  float: left;
-  padding: 10px;
-  text-align: center;
+#social-nav ul{
+display: flex;
+list-style: none;
+padding-top: 10px;
 }
 
-#footer-nav li{
+#social-nav ul li a{
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: #000;
+  }
+
+#footer-nav ul{
+  list-style: none;
+  padding-top: 10px;
+  }
+
+#footer-nav ul li a{
   list-style: none;
   text-decoration: none;
   float: right;
   padding: 10px;
   text-align: center;
+  color: #000;
 }
 
 #footer{
+  height: 40px;
   margin: 0;
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(0,0,0,.1);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+
 }
