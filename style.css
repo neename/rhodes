@@ -5,7 +5,7 @@ margin:0;
 }
 
 body{
-  background-color: #fff;
+  background-color: rgba(190, 180, 72, 0.27);
 }
 
 .cf:after{
@@ -15,24 +15,33 @@ body{
 }
 
 html{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.2;
   color: #000;
 }
 
 #wrapper{
-  width: 100%;
-  min-height: 500px;
-  background-color: rgba(209, 245, 252,1);
-  margin: 0 auto 0 auto;
+  width: 980px;
+  min-height: 600px;
+  background-color: rgba(209, 245, 252,.5);
+  margin: 20px auto 0 auto;
+  margin-top: 0;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
 }
 
 #header {
-  height: 150px;
+  height: 120px;
+  width: 980px;
+  z-index: 90;
   background:transparent url(img/bg_water.jpg) no-repeat -400px -650px;
-  position: relative;
+  position: fixed;
   border-radius: 20px 20px 0 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+  float: left;
+  display: block;
+
 }
 
 
@@ -47,7 +56,7 @@ html{
 }
 
 #nav ul{
-margin: 0;
+  margin: 0;
 }
 
 #menu li{
@@ -58,7 +67,7 @@ margin: 0;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
-  vertical-align: middle;
+
 }
 
 #menu #kontakt{
@@ -69,9 +78,8 @@ margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-}
 
+}
 
 #mainsection a{
   text-decoration: none;
@@ -83,9 +91,15 @@ margin: 0;
 }
 
 #intro{
+  width: 980px;
+  margin-top: 120px;
   display: inline-block;
   text-align: center;
   padding: 20px 20px 20px 20px;
+  justify-content: center;
+  padding-left: 90px;
+  padding-right: 90px;
+
 }
 
 
@@ -95,13 +109,15 @@ margin: 0;
 }
 
 .card{
-  background-color: #fff;
+  width: 800px;
+  background-color: rgba(255,255,255,.5);
   border-radius: 6px;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
   text-align: center;
   padding: 1rem;
   margin: 1em;
   height: auto;
+
 }
 
 .card img{
@@ -120,6 +136,7 @@ margin: 0;
 
 section.div{
   text-align: center;
+
 }
 
 #social-nav ul{
@@ -138,7 +155,7 @@ padding-top: 10px;
 
 #footer-nav ul{
   list-style: none;
-  padding-top: 10px;
+
   }
 
 #footer-nav ul li a{
@@ -151,10 +168,13 @@ padding-top: 10px;
 }
 
 #footer{
-  height: 40px;
-  margin: 0;
+  height: 30px;
+  width: 980px;
+  margin-top: 20px;
   border-radius: 0 0 20px 20px;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(255,255,255,.8);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+  bottom: 0;
+  position: flex;
 
 }
