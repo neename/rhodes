@@ -5,7 +5,7 @@ margin:0;
 }
 
 body{
-  background-color: rgba(190, 180, 72, 0.27);
+  background-color: rgba(255, 255, 255,1);
 }
 
 .cf:after{
@@ -23,11 +23,12 @@ html{
 #wrapper{
   width: 980px;
   min-height: 600px;
-  background-color: rgba(209, 245, 252,.5);
+  background-color: rgba(2,160,233,.8);
   margin: 20px auto 0 auto;
   margin-top: 0;
   justify-content: center;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 #header {
@@ -38,7 +39,6 @@ html{
   position: fixed;
   border-radius: 20px 20px 0 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
-  margin-bottom: 10px;
   float: left;
   display: block;
 
@@ -48,7 +48,7 @@ html{
 #menu li a{
   text-decoration: none;
   color: #fff;
-  text-align: center;
+
 }
 
 #logo{
@@ -56,7 +56,10 @@ html{
 }
 
 #nav ul{
+  width: 800px;
   margin: 0;
+  float: left;
+
 }
 
 #menu li{
@@ -67,6 +70,7 @@ html{
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
 
 }
 
@@ -74,10 +78,35 @@ html{
   float: right;
 }
 
+#social-nav{
+width: 80px;
+display: inline-block;
+float: right;
+
+}
+
+
+#social-nav ul{
+display: flex;
+list-style: none;
+padding-right: 10px;
+justify-content: space-between;
+position: relative;
+
+}
+
+#social-nav ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  }
+
 #mainsection{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5.625rem;
 
 }
 
@@ -90,6 +119,11 @@ html{
   text-align: center;
 }
 
+#intro h2{
+  margin-bottom: 10px;
+}
+
+
 #intro{
   width: 980px;
   margin-top: 120px;
@@ -99,9 +133,10 @@ html{
   justify-content: center;
   padding-left: 90px;
   padding-right: 90px;
-
+  padding-top: 16px;
+  border-top-width: 16px;
+  padding-bottom: 32px;
 }
-
 
 .fliesstext{
   font-size: 14px;
@@ -110,48 +145,52 @@ html{
 
 .card{
   width: 800px;
-  background-color: rgba(255,255,255,.5);
-  border-radius: 6px;
+  height: 250px;
+  background-color: rgba(255, 255, 255,.8);
+  border-radius: 0 0 8px 8px;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
   text-align: center;
-  padding: 1rem;
-  margin: 1em;
-  height: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 2.5rem;
 
 }
 
 .card img{
   width: 33.333333333%;
-  height: auto;
   float: left;
-  border-radius: 6px;
-  padding-top: 10px;
-  padding-right: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+
 }
+
+.card h3{
+  padding-left: 2rem;
+  margin-bottom: 10px;
+}
+
+
+#main_cf{
+  height: 800px;
+}
+
+#straende{
+background:transparent url(img/straende_bg.jpg) no-repeat;
+}
+
 
 .card p{
   float: left;
   width: 66.666666667%;
+  padding-left: 2rem;
+
   }
 
 section.div{
   text-align: center;
-
 }
-
-#social-nav ul{
-display: flex;
-list-style: none;
-padding-top: 10px;
-}
-
-#social-nav ul li a{
-  text-decoration: none;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  color: #000;
-  }
 
 #footer-nav ul{
   list-style: none;
@@ -163,18 +202,29 @@ padding-top: 10px;
   text-decoration: none;
   float: right;
   padding: 10px;
-  text-align: center;
+  font-size: 0.9em;
   color: #000;
+
 }
 
 #footer{
   height: 30px;
   width: 980px;
-  margin-top: 20px;
+  margin-top: 2rem;
   border-radius: 0 0 20px 20px;
-  background-color: rgba(255,255,255,.8);
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255,.2);
   bottom: 0;
-  position: flex;
-
+  display: block;
+  padding-left: 90px;
+  padding-right: 90px;
 }
+
+/*
+@media (min-width: 48em) {
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+  }
+  */
